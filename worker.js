@@ -13,17 +13,12 @@ request.onload = function () {/*XHR对象获取到返回信息后执行*/
         // json = json.slice(70, 100);// debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug //
         let lj = document.getElementById("lg")
         console.log("start to load")
-        inhtml=''
+        inhtml = '<input type="search" id="myInput" onkeyup="myFunctionhahaha()">'
         for (var i = 0; i < json.length; i++) {
             max = 20
             id = json[i]
-            if (id.length > max) {
-                aud = id.substring(0, max) + "..."
-                inhtml += "<button type=\"button\" class=\"list-group-item list-group-item-action\" onclick=\"copyandplay('" + json[i] + "')\">" + aud + "</button>";
-            }
-            else {
-                inhtml += "<button type=\"button\" class=\"list-group-item list-group-item-action\" onclick=\"copyandplay('" + json[i] + "')\">" + json[i] + "</button>";
-            }
+            aud = id
+            inhtml += "<button type=\"button\" class=\"list-group-item list-group-item-action hahahajoejoebtnbtn\" onclick=\"copyandplay('" + json[i] + "')\">" + aud + "</button>";
         }
         lj.innerHTML = inhtml
         console.log("end to load")
