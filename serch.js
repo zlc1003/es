@@ -9,18 +9,25 @@ function myFunctionhahaha() {
     gjc = filter.split("_")
     li = document.getElementsByClassName("hahahajoejoebtnbtn")
     for (i = 0; i < li.length; i++) {
+        is_in = true
         a = li[i];
         txtValue = a.innerHTML;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
+            continue
         }
         for (var j = 0; j < gjc.length; j++) {
             if (txtValue.includes(gjc[j])) {
                 a.style.display = "";
                 continue;
+            } else {
+                is_in = false
             }
+        }
+        if (is_in) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
         }
     }
 }
