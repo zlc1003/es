@@ -25,23 +25,7 @@
 
     <textarea id="code" style="height: 20%;width: 100%;" readonly unselectable="on">code</textarea>
     <div id="ao" style="display: none;"></div>
-    <script>
-        function myFunctionhahaha() {
-            var input, filter, ul, li, a, i, txtValue;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
-            li = document.getElementsByClassName("hahahajoejoebtnbtn")
-            for (i = 0; i < li.length; i++) {
-                a = li[i];
-                txtValue = a.innerHTML;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                } else {
-                    li[i].style.display = "none";
-                }
-            }
-        }
-    </script>
+    <script src="./serch.js"></script>
     <script src="./main.js"></script>
     <script src="./worker.js"></script>
 </body>
