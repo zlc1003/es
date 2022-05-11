@@ -13,7 +13,7 @@ request.onload = function () {/*XHR对象获取到返回信息后执行*/
         // json = json.slice(70, 100);// debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug // debug //
         let lj = document.getElementById("lg")
         console.log("start to load")
-        inhtml = '<input type="search" id="myInput" onkeyup="myFunctionhahaha()">'
+        inhtml = '<input type="search" id="myInput" onkeyup="myFunctionhahaha()"><div id="lrs" style="display: none;"><p>nothing here ;)</p><button onclick="lessupdate()">low accuracy search?</button></div>'
         for (var i = 0; i < json.length; i++) {
             max = 20
             id = json[i]
