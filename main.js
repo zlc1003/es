@@ -378,7 +378,7 @@ window.onresize = function () {
     kuan = document.body.clientWidth
     gao = document.body.clientHeight
     let lg = document.getElementById("lg")
-    lg.style.height = (gao * 0.8) + "px"
+    lg.style.height = (gao * 0.75) + "px"
     lg.style.width = (kuan * 0.25) + "px"
     // console.log("resize")
 }
@@ -400,3 +400,11 @@ function copyandplay(id) {
 
 var workspace = Blockly.inject('blocklyDiv', { toolbox: toolbox });
 workspace.addChangeListener(upd);
+(function () {
+    kuan = document.body.clientWidth
+    gao = document.body.clientHeight
+    let lg = document.getElementById("lg")
+    lg.style.height = (gao * 0.75) + "px"
+    lg.style.width = (kuan * 0.25) + "px"
+    // console.log("resize")
+})();
